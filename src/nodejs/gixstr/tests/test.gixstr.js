@@ -11,8 +11,7 @@ console.log(tstReplace);
 tstReplace = mystr.replaceAll("ab", "AB");
 console.log(tstReplace);
 
-//require("../gixstr");
-
+//Testing the StartWith
 var myString = "MooAbcd";
 // Usage
 if (myString.startsWith("Moo")) {

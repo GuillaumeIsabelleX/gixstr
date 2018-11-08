@@ -1,18 +1,3 @@
-//@a A package to do things with String
-//
-
-// module.exports = {
-//   contains: function(search, str) {
-//     return str.indexOf(search) > -1;
-//   }
-// };
-
-if (!String.prototype.startsWith) {
-  String.prototype.startsWith = function(term) {
-    return this.substr(0, term.length) === term;
-  };
-}
-
 /*@@@@
 @a Mastering extension in node JavaScript
 @d Nov 8, 2018 at 3:37 PM
@@ -26,7 +11,15 @@ if (!String.prototype.startsWith) {
 
 @ECR
 @CTlid 0
+
+@Thanks https://davidwalsh.name/extend-prototypes
 */
+
+if (!String.prototype.startsWith) {
+  String.prototype.startsWith = function(term) {
+    return this.substr(0, term.length) === term;
+  };
+}
 
 //Extending
 
