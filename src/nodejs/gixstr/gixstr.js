@@ -21,7 +21,7 @@ if (!String.prototype.startsWith) {
   };
 }
 
-//Extending
+//Extending Contains
 
 if (!String.prototype.contains) {
   String.prototype.contains = function(term) {
@@ -29,6 +29,7 @@ if (!String.prototype.contains) {
   };
 }
 
+//Replaces all
 if (!String.prototype.replaceAll) {
   String.prototype.replaceAll = function(from, to) {
     var arr = this.split(from);
